@@ -1,0 +1,17 @@
+
+//公共字体
+@mixin font($size, $color, $line) {
+  font-size: $size;
+  font-weight: 400;
+  color: $color;
+  line-height: $line;
+}
+
+//共用but
+@mixin but($size, $color, $line, $back, $radius) {
+  @include font($size, $color, $line);
+  background: #2C73FF;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
